@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def is lowwer(c):
+def islower(c):
     if ord(c) > 96:
         return True
     else:
