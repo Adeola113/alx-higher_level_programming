@@ -26,7 +26,7 @@ class Rectangle:
         self.__width = value
 
     @property
-    def height(self, value):
+    def height(self,):
         """getter for the private instance attribute height"""
         return self.__height
 
