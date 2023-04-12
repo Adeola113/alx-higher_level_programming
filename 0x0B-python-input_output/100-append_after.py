@@ -2,13 +2,13 @@
 """ Module that executes a function that appends a line """
 
 
-def append_after(filename="", search_string"", new_string=""):
+def append_after(filename="", search_string="", new_string=""):
     """ Function that appends a new line when a string is found
 
     Args:
-        filename: file
+        filename: filename
         search_string: string to search
-        new_string: string to appendf
+        new_string: string to append
 
     """
 
