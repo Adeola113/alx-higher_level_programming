@@ -26,7 +26,7 @@ class Base:
             self.id = id
         else:
             Base.__nb_objects += 1
-            seld.id = Base.__nb_objects
+            self.id = Base.__nb_objects
 
     @staticmethod
     def to_json_string(list_dictionaries):
@@ -109,7 +109,7 @@ class Base:
             list_objs (list): A list of inherited Base instances.
         """
         filename = cls.__name__ + ".csv"
-        with open(filename, "w", newline"") as csvfile:
+        with open(filename, "w", newline="") as csvfile:
             if list_objs is None or list_objs == []:
                 csvfile.write("[]")
             else:
@@ -131,7 +131,7 @@ class Base:
             If the files does not exist - an empty list.
             otherwise - a list of instantiated classes.
         """
-        file name = cls.__name__ + ".csv"
+        filename = cls.__name__ + ".csv"
         try:
             with open(filename, "r", newline="") as csvfile:
                 if cls.__name__ == "Rectangle":

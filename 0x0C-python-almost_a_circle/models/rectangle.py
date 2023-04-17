@@ -92,7 +92,7 @@ class Rectangle(Base):
         [print("") for y in range(self.y)]
         for h in range(self.height):
             [print(" ", end="") for x in range(self.x)]
-            [print("#", end="") forf w in range(self.width)]
+            [print("#", end="") for w in range(self.width)]
             print("")
 
     def update(self, *args, **kwargs):
@@ -115,7 +115,7 @@ class Rectangle(Base):
                         self.__init__(self.width, self.height, self.x, self.y)
                     else:
                         self.id = arg
-                else a == 1:
+                elif a == 1:
                     self.width = arg
                 elif a == 2:
                     self.height = arg
